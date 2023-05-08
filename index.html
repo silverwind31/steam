@@ -13,6 +13,7 @@
 
     <!-- VENDOR CSS FILES -->
     <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Пополним | STEAM</title>
@@ -22,17 +23,747 @@
     <!-- WRAPPER -->
     <div class="wrapper">
         
-        <!-- HEADER -->
+        <div class="container">
+            <!-- HEADER -->
         <header>
             <div class="header-line"></div>
-            <div class="container">
-                <div class="header-row">
-                    <div class="header-left">
-                        <div class="header-logo">
-                            <a href="#"><img src="assets/images/logo.svg" alt="logo"></a>
+            <div class="header-row">
+                <div class="header-left">
+                    <div class="header-logo">
+                        <a href="#"><img src="assets/images/logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="menu-nav">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#" class="nav-item">Как это работает?</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-item">Комиссия</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-item">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-item">Блог</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-item">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="action-item">
+                        <i class="icon">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36937 6.90067C6.73698 4.64981 10.3103 3.15417 12.1046 2.42856C17.2115 0.370208 18.285 0.0148083 18.9751 0C19.1285 0 19.4659 0.0296168 19.6959 0.207316C19.8799 0.355399 19.926 0.547908 19.9566 0.695991C19.9873 0.844074 20.018 1.15505 19.9873 1.39198C19.7112 4.20556 18.515 11.0322 17.9016 14.1715C17.6409 15.5043 17.1348 15.9485 16.644 15.993C15.5705 16.0818 14.7577 15.3118 13.7302 14.6602C12.1046 13.6384 11.1998 13.0017 9.62015 11.9947C7.79516 10.8397 8.97604 10.2029 10.0189 9.16634C10.2949 8.89979 15.0031 4.75347 15.0951 4.38326C15.1104 4.33883 15.1104 4.16113 15.0031 4.07228C14.8957 3.98343 14.7424 4.01305 14.6197 4.04267C14.451 4.07228 11.8745 5.73081 6.85967 9.00345C6.12354 9.49212 5.46409 9.72906 4.86598 9.71425C4.20654 9.69944 2.94898 9.35885 1.99815 9.06268C0.847949 8.70728 -0.0722116 8.51477 0.00446848 7.89283C0.0504765 7.56704 0.510557 7.24126 1.36937 6.90067Z" fill="url(#paint0_linear_690_15355)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_690_15355" x1="0" y1="0" x2="21.2775" y2="14.0678" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BDFF"/>
+                                <stop offset="1" stop-color="#2A75FF"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>       
+                        </i>
+                        Бот Telegram
+                    </a>
+                    <a href="#" class="action-item">
+                       <i class="icon">
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.624 1.32633C17.1977 0.701656 15.6924 0.256191 14.146 0.00109401C14.1319 -0.00140007 14.1174 0.000395211 14.1045 0.00622447C14.0916 0.0120537 14.0809 0.0216204 14.074 0.0335649C13.8806 0.361759 13.6664 0.789867 13.5164 1.12638C11.8254 0.88482 10.1431 0.88482 8.48684 1.12638C8.3368 0.782405 8.11482 0.361759 7.92056 0.0335649C7.91338 0.0218727 7.90267 0.0125191 7.88983 0.00672619C7.87699 0.000933247 7.86261 -0.00102971 7.84858 0.00109401C6.2773 0.259303 4.77365 0.7116 3.37055 1.32633C3.35834 1.33128 3.34804 1.33971 3.34107 1.35048C0.488974 5.41611 -0.29237 9.38183 0.0909114 13.2983C0.0926301 13.3175 0.103931 13.3358 0.119529 13.3475C2.00126 14.6661 3.82408 15.4665 5.613 15.9971C5.62691 16.0011 5.64176 16.0009 5.65555 15.9966C5.66935 15.9923 5.68143 15.984 5.69018 15.973C6.11333 15.4216 6.49056 14.8402 6.81398 14.2288C6.83306 14.193 6.81484 14.1505 6.77583 14.1363C6.17748 13.9198 5.60776 13.6557 5.05969 13.3559C5.01634 13.3317 5.01286 13.2726 5.05278 13.2442C5.16842 13.1618 5.28206 13.0768 5.39361 12.9893C5.40339 12.9816 5.41523 12.9767 5.42779 12.9751C5.44036 12.9735 5.45314 12.9752 5.46472 12.9802C9.06516 14.5486 12.9631 14.5486 16.521 12.9802C16.5326 12.9749 16.5455 12.9729 16.5583 12.9744C16.571 12.9758 16.5831 12.9807 16.593 12.9885C16.7047 13.0764 16.8186 13.1617 16.9347 13.2442C16.9746 13.2725 16.9719 13.3317 16.9286 13.3558C16.3806 13.6615 15.8108 13.9197 15.2116 14.1355C15.2024 14.1388 15.194 14.144 15.1871 14.1507C15.1801 14.1573 15.1747 14.1653 15.1711 14.1741C15.1676 14.1829 15.1661 14.1924 15.1667 14.2018C15.1672 14.2112 15.1698 14.2204 15.1744 14.2287C15.5048 14.8393 15.882 15.4207 16.2973 15.9721C16.3147 15.9954 16.3459 16.0054 16.3745 15.9971C18.1721 15.4665 19.9949 14.666 21.8767 13.3475C21.8847 13.3418 21.8915 13.3346 21.8964 13.3263C21.9014 13.3179 21.9044 13.3087 21.9053 13.2992C22.364 8.77124 21.1369 4.83803 18.6525 1.3513C18.6465 1.33999 18.6363 1.33114 18.624 1.32633ZM7.35174 10.9136C6.26776 10.9136 5.37457 9.96405 5.37457 8.79788C5.37457 7.63176 6.2504 6.68219 7.35174 6.68219C8.46166 6.68219 9.34622 7.64008 9.32886 8.79788C9.32886 9.96405 8.45298 10.9136 7.35174 10.9136ZM14.6619 10.9136C13.578 10.9136 12.6848 9.96405 12.6848 8.79788C12.6848 7.63176 13.5606 6.68219 14.6619 6.68219C15.7719 6.68219 16.6564 7.64008 16.6391 8.79788C16.6391 9.96405 15.7719 10.9136 14.6619 10.9136Z" fill="url(#paint0_linear_7_2252)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_7_2252" x1="0" y1="0" x2="22" y2="16" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#06BDFF"/>
+                                    <stop offset="1" stop-color="#2A75FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                       </i>
+                        Наш Discord
+                    </a>
+                </div> 
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            
+            <!-- SECTION HERO -->
+            <section class="hero">
+                <div class="section-title">
+                    Поможем пополнить баланс 
+                    <span class="animated-span">   
+                        <img src="assets/images/steam.png" alt="steam" class="steam_img">                             
+                    </span> 
+                    в России всего за 20 минут
+                </div>
+                <div class="hero-form">
+                    <form>
+                        <div class="form-order">
+                            <div class="order-item">
+                                <div class="order-item-header">
+                                    <label for="login">Укажите ваш логин Steam</label>
+                                    <div class="modal-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 16V12" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 8H12.01" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                
+                                        Где найти?
+                                    </div>
+                                </div>
+                                <div class="input-item">
+                                    <i class="icon">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 17C15 14.5454 11.866 12.5556 8 12.5556C4.13401 12.5556 1 14.5454 1 17M8 9.88889C5.58375 9.88889 3.625 7.89904 3.625 5.44444C3.625 2.98985 5.58375 1 8 1C10.4162 1 12.375 2.98985 12.375 5.44444C12.375 7.89904 10.4162 9.88889 8 9.88889Z" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>           
+                                    </i>
+                                    <input type="text" name="login" id="login" placeholder="Ваш логин" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <label for="nickname">
+                                    Выберите удобный способ связи
+                                </label>
+                                <div class="input-container">
+                                    <div class="input-radios">
+                                        <div class="radio-item">
+                                            <input type="radio" name="social" id="telegram">
+                                            <label for="telegram">
+                                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36937 6.90067C6.73698 4.64981 10.3103 3.15417 12.1046 2.42856C17.2115 0.370208 18.285 0.0148083 18.9751 0C19.1285 0 19.4659 0.0296168 19.6959 0.207316C19.8799 0.355399 19.926 0.547908 19.9566 0.695991C19.9873 0.844074 20.018 1.15505 19.9873 1.39198C19.7112 4.20556 18.515 11.0322 17.9016 14.1715C17.6409 15.5043 17.1348 15.9485 16.644 15.993C15.5705 16.0818 14.7577 15.3118 13.7302 14.6602C12.1046 13.6384 11.1998 13.0017 9.62015 11.9947C7.79516 10.8397 8.97604 10.2029 10.0189 9.16634C10.2949 8.89979 15.0031 4.75347 15.0951 4.38326C15.1104 4.33883 15.1104 4.16113 15.0031 4.07228C14.8957 3.98343 14.7424 4.01305 14.6197 4.04267C14.451 4.07228 11.8745 5.73081 6.85967 9.00345C6.12354 9.49212 5.46409 9.72906 4.86598 9.71425C4.20654 9.69944 2.94898 9.35885 1.99815 9.06268C0.847949 8.70728 -0.0722116 8.51477 0.00446848 7.89283C0.0504765 7.56704 0.510557 7.24126 1.36937 6.90067Z" fill="url(#paint0_linear_30_2273)"/>
+                                                    <defs>
+                                                    <linearGradient id="paint0_linear_30_2273" x1="0" y1="0" x2="21.2775" y2="14.0678" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#06BDFF"/>
+                                                    <stop offset="1" stop-color="#2A75FF"/>
+                                                    </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                Telegram
+                                            </label>
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" name="social" id="discord">
+                                            <label for="discord">
+                                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18.624 1.32633C17.1977 0.701656 15.6924 0.256191 14.146 0.00109401C14.1319 -0.00140007 14.1174 0.000395211 14.1045 0.00622447C14.0916 0.0120537 14.0809 0.0216204 14.074 0.0335649C13.8806 0.361759 13.6664 0.789867 13.5164 1.12638C11.8254 0.88482 10.1431 0.88482 8.48684 1.12638C8.3368 0.782405 8.11482 0.361759 7.92056 0.0335649C7.91338 0.0218727 7.90267 0.0125191 7.88983 0.00672619C7.87699 0.000933247 7.86261 -0.00102971 7.84858 0.00109401C6.2773 0.259303 4.77365 0.7116 3.37055 1.32633C3.35834 1.33128 3.34804 1.33971 3.34107 1.35048C0.488974 5.41611 -0.29237 9.38183 0.0909114 13.2983C0.0926301 13.3175 0.103931 13.3358 0.119529 13.3475C2.00126 14.6661 3.82408 15.4665 5.613 15.9971C5.62691 16.0011 5.64176 16.0009 5.65555 15.9966C5.66935 15.9923 5.68143 15.984 5.69018 15.973C6.11333 15.4216 6.49056 14.8402 6.81398 14.2288C6.83306 14.193 6.81484 14.1505 6.77583 14.1363C6.17748 13.9198 5.60776 13.6557 5.05969 13.3559C5.01634 13.3317 5.01286 13.2726 5.05278 13.2442C5.16842 13.1618 5.28206 13.0768 5.39361 12.9893C5.40339 12.9816 5.41523 12.9767 5.42779 12.9751C5.44036 12.9735 5.45314 12.9752 5.46472 12.9802C9.06516 14.5486 12.9631 14.5486 16.521 12.9802C16.5326 12.9749 16.5455 12.9729 16.5583 12.9744C16.571 12.9758 16.5831 12.9807 16.593 12.9885C16.7047 13.0764 16.8186 13.1617 16.9347 13.2442C16.9746 13.2725 16.9719 13.3317 16.9286 13.3558C16.3806 13.6615 15.8108 13.9197 15.2116 14.1355C15.2024 14.1388 15.194 14.144 15.1871 14.1507C15.1801 14.1573 15.1747 14.1653 15.1711 14.1741C15.1676 14.1829 15.1661 14.1924 15.1667 14.2018C15.1672 14.2112 15.1698 14.2204 15.1744 14.2287C15.5048 14.8393 15.882 15.4207 16.2973 15.9721C16.3147 15.9954 16.3459 16.0054 16.3745 15.9971C18.1721 15.4665 19.9949 14.666 21.8767 13.3475C21.8847 13.3418 21.8915 13.3346 21.8964 13.3263C21.9014 13.3179 21.9044 13.3087 21.9053 13.2992C22.364 8.77124 21.1369 4.83803 18.6525 1.3513C18.6465 1.33999 18.6363 1.33114 18.624 1.32633ZM7.35174 10.9136C6.26776 10.9136 5.37457 9.96405 5.37457 8.79788C5.37457 7.63176 6.2504 6.68219 7.35174 6.68219C8.46166 6.68219 9.34622 7.64008 9.32886 8.79788C9.32886 9.96405 8.45298 10.9136 7.35174 10.9136ZM14.6619 10.9136C13.578 10.9136 12.6848 9.96405 12.6848 8.79788C12.6848 7.63176 13.5606 6.68219 14.6619 6.68219C15.7719 6.68219 16.6564 7.64008 16.6391 8.79788C16.6391 9.96405 15.7719 10.9136 14.6619 10.9136Z" fill="url(#paint0_linear_30_2277)"/>
+                                                    <defs>
+                                                    <linearGradient id="paint0_linear_30_2277" x1="0" y1="0" x2="22" y2="16" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#06BDFF"/>
+                                                    <stop offset="1" stop-color="#2A75FF"/>
+                                                    </linearGradient>
+                                                    </defs>
+                                                    </svg>       
+                                                Discord
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="text" name="nickname" id="nickname" placeholder="Никнейм" required disabled>
+                                </div>
+                                <div class="input-alert-container">
+                                    <div class="input-alert">
+                                        <i class="icon">
+                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 10.25V14" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.7063 4.25024L2.45625 18.5002C2.32482 18.7279 2.25552 18.9861 2.25528 19.2489C2.25505 19.5118 2.3239 19.7701 2.45492 19.998C2.58595 20.2258 2.77456 20.4153 3.00185 20.5473C3.22915 20.6793 3.48714 20.7493 3.75 20.7502H20.25C20.5129 20.7493 20.7709 20.6793 20.9981 20.5473C21.2254 20.4153 21.414 20.2258 21.5451 19.998C21.6761 19.7701 21.745 19.5118 21.7447 19.2489C21.7445 18.9861 21.6752 18.7279 21.5438 18.5002L13.2938 4.25024C13.1633 4.0223 12.975 3.83287 12.7478 3.70113C12.5206 3.56938 12.2626 3.5 12 3.5C11.7374 3.5 11.4794 3.56938 11.2522 3.70113C11.025 3.83287 10.8367 4.0223 10.7063 4.25024V4.25024Z" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 18.5C12.6213 18.5 13.125 17.9963 13.125 17.375C13.125 16.7537 12.6213 16.25 12 16.25C11.3787 16.25 10.875 16.7537 10.875 17.375C10.875 17.9963 11.3787 18.5 12 18.5Z" fill="#61758B"/>
+                                            </svg>                                                
+                                        </i>
+                                        <div class="alert-text">
+                                            Не забудьте указать свой хештег из 4-х цифр после ника! Пример: 
+                                            <span class="nickname">friend<span>#1462</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-item-header">
+                                    <label for="price-input">
+                                        Введите необходимую сумму пополнения 
+                                    </label>
+                                </div>
+                                <div class="input-item">
+                                    <i class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 12C18.333 12 18.333 4 13 4" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.00003 12H13" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.00003 16H12" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00003 19V4" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.00003 4H13" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                    <input type="number" name="price-input" id="price-input" required>
+                                </div>
+                                <div class="prices-container">
+                                    <div class="price-item">
+                                        <input type="radio" name="price" id="price-100" value="100">
+                                        <label for="price-100">
+                                            100
+                                             <i class="icon">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 8.00002C13.5553 8.00002 13.5553 2.66669 10 2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 8H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 10.6667H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 13.3334V2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 2.66669H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                        
+                                            </i>
+                                        </label>
+                                    </div>
+                                    <div class="price-item">
+                                        <input type="radio" name="price" id="price-250" value="250">
+                                        <label for="price-250">
+                                            250 
+                                            <i class="icon">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 8.00002C13.5553 8.00002 13.5553 2.66669 10 2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 8H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 10.6667H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 13.3334V2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 2.66669H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                        
+                                            </i>
+                                         </label>
+                                    </div>
+                                    <div class="price-item">
+                                        <input type="radio" name="price" id="price-500" value="500">
+                                        <label for="price-500">
+                                            500
+                                            <i class="icon">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 8.00002C13.5553 8.00002 13.5553 2.66669 10 2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 8H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 10.6667H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 13.3334V2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 2.66669H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                        
+                                            </i>
+                                        </label>
+                                        
+                                    </div>
+                                    <div class="price-item">
+                                        <input type="radio" name="price" id="price-1000" value="1000">
+                                        <label for="price-1000">
+                                            1000 
+                                            <i class="icon">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 8.00002C13.5553 8.00002 13.5553 2.66669 10 2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 8H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 10.6667H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 13.3334V2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 2.66669H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                        
+                                            </i>
+                                        </label>
+                                       
+                                    </div>
+                                    <div class="price-item">
+                                        <input type="radio" name="price" id="price-2500" value="2500">
+                                        <label for="price-2500">
+                                            2500 
+                                            <i class="icon">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 8.00002C13.5553 8.00002 13.5553 2.66669 10 2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 8H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 10.6667H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 13.3334V2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 2.66669H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                        
+                                            </i>
+                                        </label>
+                                      
+                                    </div>
+                                    <div class="price-item">
+                                        <input type="radio" name="price" id="price-5000" value="5000">
+                                        <label for="price-5000">
+                                            5000 
+                                            <i class="icon">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 8.00002C13.5553 8.00002 13.5553 2.66669 10 2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 8H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.66666 10.6667H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 13.3334V2.66669" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6.66666 2.66669H9.99999" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                        
+                                            </i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-payments">
+                            <div class="payments-title">
+                                Выберите способ оплаты
+                            </div>
+                            <div class="payments">
+                                <div class="payments-item">
+                                    <input type="radio" name="payment_type" id="visa">
+                                    <label for="visa">
+                                        <img src="assets/images/visa.svg" alt="visa">
+                                        
+                                    </label>
+                                </div>
+                                <div class="payments-item">
+                                    <input type="radio" name="payment_type" id="sbp">
+                                    <label for="sbp">
+                                        <img src="assets/images/sbp.svg" alt="sbp">
+                                    
+                                    </label>
+                                </div>
+                                <div class="payments-item">
+                                    <input type="radio" name="payment_type" id="qiwi">
+                                    <label for="qiwi">
+                                        <img src="assets/images/qiwi.svg" alt="qiwi">
+                                    </label>   
+                                </div>
+                            </div>
+                            <div class="payments-information">
+                                <div class="payment-information-item">
+                                    <div class="title">
+                                        Всего заплатите 
+                                    </div>
+                                    <div class="price">
+                                        845 <img src="assets/images/form_ruble.svg" alt="ruble">
+                                    </div>
+                                </div>
+                                <div class="payment-information-item">
+                                    <div class="title">
+                                        Всего заплатите <span>(30%)</span>
+                                    </div>
+                                    <div class="price">
+                                        845 <img src="assets/images/form_ruble.svg" alt="ruble">
+                                    </div>
+                                </div>
+                                <div class="payment-information-item">
+                                    <div class="title">
+                                        Получите на баланс Steam
+                                    </div>
+                                    <div class="price">
+                                        650 <img src="assets/images/form_ruble.svg" alt="ruble">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="send-form">
+                                <div class="payments-agreement">
+                                    <input type="checkbox" id="agreement" name="agreement">
+                                    <label for="agreement">
+                                        Я подтверждаю, что указал все данные верно и согласен на операцию
+                                    </label>
+                                </div>
+                                <button type="submit" class="form-btn" disabled>Пополнить счёт</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>    
+            </section>
+ 
+            <!-- SECTION INSTRUCTION -->
+            <section class="instruction">
+                <div class="instruction-line"></div>
+                <div class="section-title">
+                    Как работает пополнение баланса 
+                     <span class="animated-span">   
+                        <img src="assets/images/steam.png" alt="steam" class="steam_img">                             
+                    </span> 
+                     кошелька через нас?
+                </div> 
+                <div class="instruction-row">
+                    <div class="instruction-top">
+                        <div class="instruction-card">
+                            <div class="card-title">
+                                Скопируйте логин
+                            </div>
+                            <div class="card-description">
+                                Найдите свой логин в Steam и введите его в соответствующем поле.
+                            </div>
+                            <div class="modal-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 16V12" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 8H12.01" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>      
+                                Где найти логин?    
+                            </div>
+                        </div>
+                        <div class="instruction-images">
+                            <div class="login-image">
+                                <img src="assets/images/instruction_img_1.png" alt="instruction">
+                            </div>
+                            <div class="additional-image">
+                                <img src="assets/images/instruction_img_2.png" alt="instruction">
+                            </div>
+                        </div>
+                        <div class="instruction-card info">
+                            <div class="card-title">
+                                Укажите сумму
+                            </div>
+                            <div class="card-description">
+                                Введите в рублях нужную вам сумму пополнения аккаунта Steam в соответствующем поле.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instruction-middle">
+                        <div class="instruction-card">
+                            <div class="card-title">
+                                Способ связи
+                            </div>
+                            <div class="card-description">
+                                Выберите удобный для вас способ связи через Telegram или Discord.
+                            </div>
+                            <div class="card-actions">
+                                <a href="#" class="action-item">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36937 6.90067C6.73698 4.64981 10.3103 3.15417 12.1046 2.42856C17.2115 0.370208 18.285 0.0148083 18.9751 0C19.1285 0 19.4659 0.0296168 19.6959 0.207316C19.8799 0.355399 19.926 0.547908 19.9566 0.695991C19.9873 0.844074 20.018 1.15505 19.9873 1.39198C19.7112 4.20556 18.515 11.0322 17.9016 14.1715C17.6409 15.5043 17.1348 15.9485 16.644 15.993C15.5705 16.0818 14.7577 15.3118 13.7302 14.6602C12.1046 13.6384 11.1998 13.0017 9.62015 11.9947C7.79516 10.8397 8.97604 10.2029 10.0189 9.16634C10.2949 8.89979 15.0031 4.75347 15.0951 4.38326C15.1104 4.33883 15.1104 4.16113 15.0031 4.07228C14.8957 3.98343 14.7424 4.01305 14.6197 4.04267C14.451 4.07228 11.8745 5.73081 6.85967 9.00345C6.12354 9.49212 5.46409 9.72905 4.86598 9.71425C4.20654 9.69944 2.94898 9.35885 1.99815 9.06268C0.847949 8.70728 -0.0722116 8.51477 0.00446848 7.89282C0.0504765 7.56704 0.510557 7.24126 1.36937 6.90067Z" fill="url(#paint0_linear_2_249)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_2_249" x1="0" y1="0" x2="21.2775" y2="14.0678" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06BDFF"/>
+                                        <stop offset="1" stop-color="#2A75FF"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    Telegram                                            
+                                </a>
+                                <a href="#" class="action-item">
+                                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.624 1.32633C17.1977 0.701656 15.6924 0.256191 14.146 0.00109401C14.1319 -0.00140007 14.1174 0.000395211 14.1045 0.00622447C14.0916 0.0120537 14.0809 0.0216204 14.074 0.0335649C13.8806 0.361759 13.6664 0.789867 13.5164 1.12638C11.8254 0.88482 10.1431 0.88482 8.48684 1.12638C8.3368 0.782405 8.11482 0.361759 7.92056 0.0335649C7.91338 0.0218727 7.90267 0.0125191 7.88983 0.00672619C7.87699 0.000933247 7.86261 -0.00102971 7.84858 0.00109401C6.2773 0.259303 4.77365 0.7116 3.37055 1.32633C3.35834 1.33128 3.34804 1.33971 3.34107 1.35048C0.488974 5.41611 -0.29237 9.38183 0.0909114 13.2983C0.0926301 13.3175 0.103931 13.3358 0.119529 13.3475C2.00126 14.6661 3.82408 15.4665 5.613 15.9971C5.62691 16.0011 5.64176 16.0009 5.65555 15.9966C5.66935 15.9923 5.68143 15.984 5.69018 15.973C6.11333 15.4216 6.49056 14.8402 6.81398 14.2288C6.83306 14.193 6.81484 14.1505 6.77583 14.1363C6.17748 13.9198 5.60776 13.6557 5.05969 13.3559C5.01634 13.3317 5.01286 13.2726 5.05278 13.2442C5.16842 13.1618 5.28206 13.0768 5.39361 12.9893C5.40339 12.9816 5.41523 12.9767 5.42779 12.9751C5.44036 12.9735 5.45314 12.9752 5.46472 12.9802C9.06516 14.5486 12.9631 14.5486 16.521 12.9802C16.5326 12.9749 16.5455 12.9729 16.5583 12.9744C16.571 12.9758 16.5831 12.9807 16.593 12.9885C16.7047 13.0764 16.8186 13.1617 16.9347 13.2442C16.9746 13.2725 16.9719 13.3317 16.9286 13.3558C16.3806 13.6615 15.8108 13.9197 15.2116 14.1355C15.2024 14.1388 15.194 14.144 15.1871 14.1507C15.1801 14.1573 15.1747 14.1653 15.1711 14.1741C15.1676 14.1829 15.1661 14.1924 15.1667 14.2018C15.1672 14.2112 15.1698 14.2204 15.1744 14.2287C15.5048 14.8393 15.882 15.4207 16.2973 15.9721C16.3147 15.9954 16.3459 16.0054 16.3745 15.9971C18.1721 15.4665 19.9949 14.666 21.8767 13.3475C21.8847 13.3418 21.8915 13.3346 21.8964 13.3263C21.9014 13.3179 21.9044 13.3087 21.9053 13.2992C22.364 8.77124 21.1369 4.83803 18.6525 1.3513C18.6465 1.33999 18.6363 1.33114 18.624 1.32633ZM7.35174 10.9136C6.26776 10.9136 5.37457 9.96405 5.37457 8.79788C5.37457 7.63176 6.2504 6.68219 7.35174 6.68219C8.46166 6.68219 9.34622 7.64008 9.32886 8.79788C9.32886 9.96405 8.45298 10.9136 7.35174 10.9136ZM14.6619 10.9136C13.578 10.9136 12.6848 9.96405 12.6848 8.79788C12.6848 7.63176 13.5606 6.68219 14.6619 6.68219C15.7719 6.68219 16.6564 7.64008 16.6391 8.79788C16.6391 9.96405 15.7719 10.9136 14.6619 10.9136Z" fill="#F4F4F4"/>
+                                    </svg>                                            
+                                    Discord
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instruction-bottom">
+                        <div class="top-items">
+                            <div class="instruction-card">
+                                <div class="card-title">
+                                    Оплатите
+                                </div>
+                                <div class="card-description">
+                                    После выбора удобного способа оплаты, остается только ввести свои данные и подтвердить платеж.
+                                </div>
+                            </div>
+                            <div class="instruction-images">
+                                <img src="assets/images/instruction_img_3.png" alt="instruction">
+                                <img src="assets/images/instruction_img_4.png" alt="instruction">
+                            </div>
+                        </div>
+                        <div class="bottom-items">
+                            <div class="instruction-card">
+                                <div class="card-title">
+                                    Готово
+                                </div>
+                                <div class="card-description">
+                                    В течение 20 минут средства поступят на ваш Steam кошелек.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </section>
+            <!-- SECTION ADVERTISE -->
+            <section class="advertise">
+                <div class="advertise-row">
+                    <div class="advertise-body">
+                        <div class="advertise-text">
+                            Размер комиссии нашего сервиса 
+                            не зависит от общей суммы пополнения и составляет — 
+                        </div>
+                        <div class="advertise-action">
+                            <a href="#" class="advertise-btn">Перейти к пополнению</a>
+                        </div>
+                    </div>
+                    <div class="advertise-price">
+                        30
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION TESTIMONIALS -->
+            <section class="testimonials">
+                <div class="section-title">
+                    Отзывы наших клиентов <span class="animated-span">1000+</span>
+                </div>
+                <div class="swiper-big-wrapper">
+                    <div class="swiper testimonials-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="assets/images/testimonials_1.png" class="slide-item" data-effect="move-from-top">
+                                    <div class="slide-image">
+                                        <img src="assets/images/testimonials_1.png" alt="testimonials" >
+                                    </div>
+                                    <div class="slide-text">
+                                        <div class="author">
+                                            Drakon98**
+                                        </div>
+                                        <div class="price">
+                                            2 500 <img src="assets/images/ruble_icon.svg" alt="ruble">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/images/testimonials_2.png" class="slide-item" data-effect="move-from-top">
+                                    <div class="slide-image">
+                                        <img src="assets/images/testimonials_2.png" alt="testimonials" >
+                                    </div>
+                                    <div class="slide-text">
+                                        <div class="author">
+                                            LurkNST**
+                                        </div>
+                                        <div class="price">
+                                            5 200 <img src="assets/images/ruble_icon.svg" alt="ruble">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/images/testimonials_3.png" class="slide-item" data-effect="move-from-top">
+                                    <div class="slide-image">
+                                        <img src="assets/images/testimonials_3.png" alt="testimonials" >
+                                    </div>
+                                    <div class="slide-text">
+                                        <div class="author">
+                                            Alex20**
+                                        </div>
+                                        <div class="price">
+                                            570 <img src="assets/images/ruble_icon.svg" alt="ruble">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/images/testimonials_1.png" class="slide-item" data-effect="move-from-top">
+                                    <div class="slide-image">
+                                        <img src="assets/images/testimonials_1.png" alt="testimonials" >
+                                    </div>
+                                    <div class="slide-text">
+                                        <div class="author">
+                                            Qff_R**
+                                        </div>
+                                        <div class="price">
+                                            1 200 <img src="assets/images/ruble_icon.svg" alt="ruble">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/images/testimonials_1.png" class="slide-item" data-effect="move-from-top">
+                                    <div class="slide-image">
+                                        <img src="assets/images/testimonials_1.png" alt="testimonials" >
+                                    </div>
+                                    <div class="slide-text">
+                                        <div class="author">
+                                            Drakon98**
+                                        </div>
+                                        <div class="price">
+                                            2 500 <img src="assets/images/ruble_icon.svg" alt="ruble">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/images/testimonials_1.png" class="slide-item" data-effect="move-from-top">
+                                    <div class="slide-image">
+                                        <img src="assets/images/testimonials_1.png" alt="testimonials" >
+                                    </div>
+                                    <div class="slide-text">
+                                        <div class="author">
+                                            Drakon98**
+                                        </div>
+                                        <div class="price">
+                                            2 500 <img src="assets/images/ruble_icon.svg" alt="ruble">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide"> 
+                                <a href="assets/images/testimonials_1.png" class="slide-item" data-effect="move-from-top">
+                                    <div class="slide-image">
+                                        <img src="assets/images/testimonials_1.png" alt="testimonials" >
+                                    </div>
+                                    <div class="slide-text">
+                                        <div class="author">
+                                            Drakon98**
+                                        </div>
+                                        <div class="price">
+                                            2 500 <img src="assets/images/ruble_icon.svg" alt="ruble">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-nav">
+                        <div class="slide-prev">
+                           <div class="arrow"></div>                                                                                         
+                        </div>
+                        <div class="slide-next">
+                            <div class="arrow"></div>                                                     
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION-ARTICLES -->
+            <section class="articles main">
+                <div class="section-header">
+                    <div class="section-title">
+                        Наш блог
+                    </div>
+                    <div class="section-header-action">
+                        <a href="#" class="action-btn">Посмотреть больше</a>
+                    </div>
+                </div>
+                <div class="articles-row">
+                    <div class="article">
+                        <div class="article-image">
+                            <img src="assets/images/blog_1.png" alt="image">
+                        </div>
+                        <div class="article-title">
+                            Обзор The Callisto Protocol — идейная, но не до конца
+                        </div>
+                        <div class="article-action">
+                            <a href="#" class="action-item">Читать статью</a>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-image">
+                            <img src="assets/images/blog_2.png" alt="image">
+                        </div>
+                        <div class="article-title">
+                            Широкий пул – обязанность 
+                            каждого игрока?
+                        </div>
+                        <div class="article-action">
+                            <a href="#" class="action-item">Читать статью</a>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-image">
+                            <img src="assets/images/blog_3.png" alt="image">
+                        </div>
+                        <div class="article-title">
+                            Живопись, интриги, любовь в Дораме Рисующий Ветер
+                        </div>
+                        <div class="article-action">
+                            <a href="#" class="action-item">Читать статью</a>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-image">
+                            <img src="assets/images/blog_4.png" alt="image">
+                        </div>
+                        <div class="article-title">
+                            У аниме-девушки Lofi Girl с YouTube появился «сосед»
+                        </div>
+                        <div class="article-action">
+                            <a href="#" class="action-item">Читать статью</a>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-image">
+                            <img src="assets/images/blog_5.png" alt="image">
+                        </div>
+                        <div class="article-title">
+                            Игрок провернул крупнейшее ограбление в истории EVE Online
+                        </div>
+                        <div class="article-action">
+                            <a href="#" class="action-item">Читать статью</a>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-image">
+                            <img src="assets/images/blog_6.png" alt="image">
+                        </div>
+                        <div class="article-title">
+                            Мелочи жизни в Persona 5/Royal
+                        </div>
+                        <div class="article-action">
+                            <a href="#" class="action-item">Читать статью</a>
+                        </div>
+                    </div>
+                </div>
+            </section>-
+
+            <!-- SECTION FAQ -->
+            <section class="faq">
+                <div class="section-title">
+                    FAQ <span class="animated-span">?</span>
+                </div>
+                <div class="faq-row">
+                    <div class="faq-item">
+                        <div class="faq-title">
+                            Что такое "Логин" и где его искать?
+                        </div>
+                        <div class="faq-content">
+                            Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title">
+                            Я указал неверный логин
+                        </div>
+                        <div class="faq-content">
+                            Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title">
+                            Какие требования к аккаунту?
+                        </div>
+                        <div class="faq-content">
+                            Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title">
+                            У меня новый (свежесозданный) или ранее не пополнявшийся аккаунт
+                        </div>
+                        <div class="faq-content">
+                            Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title">
+                            Не приходят деньги на баланс аккаунта Steam, что делать?
+                        </div>
+                        <div class="faq-content">
+                            Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title">
+                            Пришла сумма меньше чем в калькуляторе. Что делать?
+                        </div>
+                        <div class="faq-content">
+                            Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title">
+                            Политика возврата
+                        </div>
+                        <div class="faq-content">
+                            Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-row">
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <div class="footer-logo">
+                            <a href="#"><img src="assets/images/footer_logo.svg" alt="logo"></a>
                         </div>
                         <nav class="menu-nav">
                             <ul class="nav-list">
+                                <li> 
+                                    <a href="#" class="nav-item">Пополнить сейчас</a>
+                                </li>
                                 <li>
                                     <a href="#" class="nav-item">Как это работает?</a>
                                 </li>
@@ -51,710 +782,90 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="header-actions">
+                    <div class="footer-actions">
                         <a href="#" class="action-item">
                             <i class="icon">
                                 <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36937 6.90067C6.73698 4.64981 10.3103 3.15417 12.1046 2.42856C17.2115 0.370208 18.285 0.0148083 18.9751 0C19.1285 0 19.4659 0.0296168 19.6959 0.207316C19.8799 0.355399 19.926 0.547908 19.9566 0.695991C19.9873 0.844074 20.018 1.15505 19.9873 1.39198C19.7112 4.20556 18.515 11.0322 17.9016 14.1715C17.6409 15.5043 17.1348 15.9485 16.644 15.993C15.5705 16.0818 14.7577 15.3118 13.7302 14.6602C12.1046 13.6384 11.1998 13.0017 9.62015 11.9947C7.79516 10.8397 8.97604 10.2029 10.0189 9.16634C10.2949 8.89979 15.0031 4.75347 15.0951 4.38326C15.1104 4.33883 15.1104 4.16113 15.0031 4.07228C14.8957 3.98343 14.7424 4.01305 14.6197 4.04267C14.451 4.07228 11.8745 5.73081 6.85967 9.00345C6.12354 9.49212 5.46409 9.72906 4.86598 9.71425C4.20654 9.69944 2.94898 9.35885 1.99815 9.06268C0.847949 8.70728 -0.0722116 8.51477 0.00446848 7.89283C0.0504765 7.56704 0.510557 7.24126 1.36937 6.90067Z" fill="url(#paint0_linear_690_15355)"/>
-                                    <defs>
-                                    <linearGradient id="paint0_linear_690_15355" x1="0" y1="0" x2="21.2775" y2="14.0678" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#06BDFF"/>
-                                    <stop offset="1" stop-color="#2A75FF"/>
-                                    </linearGradient>
-                                    </defs>
-                                </svg>       
-                            </i>
-                            Бот Telegram
-                        </a>
-                        <a href="#" class="action-item">
-                           <i class="icon">
-                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.624 1.32633C17.1977 0.701656 15.6924 0.256191 14.146 0.00109401C14.1319 -0.00140007 14.1174 0.000395211 14.1045 0.00622447C14.0916 0.0120537 14.0809 0.0216204 14.074 0.0335649C13.8806 0.361759 13.6664 0.789867 13.5164 1.12638C11.8254 0.88482 10.1431 0.88482 8.48684 1.12638C8.3368 0.782405 8.11482 0.361759 7.92056 0.0335649C7.91338 0.0218727 7.90267 0.0125191 7.88983 0.00672619C7.87699 0.000933247 7.86261 -0.00102971 7.84858 0.00109401C6.2773 0.259303 4.77365 0.7116 3.37055 1.32633C3.35834 1.33128 3.34804 1.33971 3.34107 1.35048C0.488974 5.41611 -0.29237 9.38183 0.0909114 13.2983C0.0926301 13.3175 0.103931 13.3358 0.119529 13.3475C2.00126 14.6661 3.82408 15.4665 5.613 15.9971C5.62691 16.0011 5.64176 16.0009 5.65555 15.9966C5.66935 15.9923 5.68143 15.984 5.69018 15.973C6.11333 15.4216 6.49056 14.8402 6.81398 14.2288C6.83306 14.193 6.81484 14.1505 6.77583 14.1363C6.17748 13.9198 5.60776 13.6557 5.05969 13.3559C5.01634 13.3317 5.01286 13.2726 5.05278 13.2442C5.16842 13.1618 5.28206 13.0768 5.39361 12.9893C5.40339 12.9816 5.41523 12.9767 5.42779 12.9751C5.44036 12.9735 5.45314 12.9752 5.46472 12.9802C9.06516 14.5486 12.9631 14.5486 16.521 12.9802C16.5326 12.9749 16.5455 12.9729 16.5583 12.9744C16.571 12.9758 16.5831 12.9807 16.593 12.9885C16.7047 13.0764 16.8186 13.1617 16.9347 13.2442C16.9746 13.2725 16.9719 13.3317 16.9286 13.3558C16.3806 13.6615 15.8108 13.9197 15.2116 14.1355C15.2024 14.1388 15.194 14.144 15.1871 14.1507C15.1801 14.1573 15.1747 14.1653 15.1711 14.1741C15.1676 14.1829 15.1661 14.1924 15.1667 14.2018C15.1672 14.2112 15.1698 14.2204 15.1744 14.2287C15.5048 14.8393 15.882 15.4207 16.2973 15.9721C16.3147 15.9954 16.3459 16.0054 16.3745 15.9971C18.1721 15.4665 19.9949 14.666 21.8767 13.3475C21.8847 13.3418 21.8915 13.3346 21.8964 13.3263C21.9014 13.3179 21.9044 13.3087 21.9053 13.2992C22.364 8.77124 21.1369 4.83803 18.6525 1.3513C18.6465 1.33999 18.6363 1.33114 18.624 1.32633ZM7.35174 10.9136C6.26776 10.9136 5.37457 9.96405 5.37457 8.79788C5.37457 7.63176 6.2504 6.68219 7.35174 6.68219C8.46166 6.68219 9.34622 7.64008 9.32886 8.79788C9.32886 9.96405 8.45298 10.9136 7.35174 10.9136ZM14.6619 10.9136C13.578 10.9136 12.6848 9.96405 12.6848 8.79788C12.6848 7.63176 13.5606 6.68219 14.6619 6.68219C15.7719 6.68219 16.6564 7.64008 16.6391 8.79788C16.6391 9.96405 15.7719 10.9136 14.6619 10.9136Z" fill="url(#paint0_linear_7_2252)"/>
-                                <defs>
-                                    <linearGradient id="paint0_linear_7_2252" x1="0" y1="0" x2="22" y2="16" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#06BDFF"/>
-                                        <stop offset="1" stop-color="#2A75FF"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                           </i>
-                            Наш Discord
-                        </a>
-                    </div> 
-                </div>
-            </div>
-        </header>
-
-        <!-- MAIN -->
-        <main>
-            
-            <!-- SECTION HERO -->
-            <section class="hero">
-                <div class="container">
-                    <div class="section-title">
-                        Поможем пополнить баланс 
-                        <span class="animated-span">   
-                            <img src="assets/images/index/steam.png" alt="steam" class="steam_img">                             
-                        </span> 
-                        в России всего за 20 минут
-                    </div>
-                    <div class="hero-form">
-                        <form>
-                            <div class="form-order">
-                                <div class="order-item">
-                                    <div class="order-item-header">
-                                        <label for="login">Укажите ваш логин Steam</label>
-                                        <div class="modal-btn">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M12 16V12" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M12 8H12.01" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>                                                
-                                            Где найти?
-                                        </div>
-                                    </div>
-                                    <div class="input-item">
-                                        <i class="icon">
-                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 17C15 14.5454 11.866 12.5556 8 12.5556C4.13401 12.5556 1 14.5454 1 17M8 9.88889C5.58375 9.88889 3.625 7.89904 3.625 5.44444C3.625 2.98985 5.58375 1 8 1C10.4162 1 12.375 2.98985 12.375 5.44444C12.375 7.89904 10.4162 9.88889 8 9.88889Z" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>           
-                                        </i>
-                                        <input type="text" name="login" id="login" placeholder="Ваш логин" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="order-item">
-                                    <label for="nickname">
-                                        Выберите удобный способ связи
-                                    </label>
-                                    <div class="input-container">
-                                        <div class="input-radios">
-                                            <div class="radio-item">
-                                                <label for="telegram">
-                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36937 6.90067C6.73698 4.64981 10.3103 3.15417 12.1046 2.42856C17.2115 0.370208 18.285 0.0148083 18.9751 0C19.1285 0 19.4659 0.0296168 19.6959 0.207316C19.8799 0.355399 19.926 0.547908 19.9566 0.695991C19.9873 0.844074 20.018 1.15505 19.9873 1.39198C19.7112 4.20556 18.515 11.0322 17.9016 14.1715C17.6409 15.5043 17.1348 15.9485 16.644 15.993C15.5705 16.0818 14.7577 15.3118 13.7302 14.6602C12.1046 13.6384 11.1998 13.0017 9.62015 11.9947C7.79516 10.8397 8.97604 10.2029 10.0189 9.16634C10.2949 8.89979 15.0031 4.75347 15.0951 4.38326C15.1104 4.33883 15.1104 4.16113 15.0031 4.07228C14.8957 3.98343 14.7424 4.01305 14.6197 4.04267C14.451 4.07228 11.8745 5.73081 6.85967 9.00345C6.12354 9.49212 5.46409 9.72906 4.86598 9.71425C4.20654 9.69944 2.94898 9.35885 1.99815 9.06268C0.847949 8.70728 -0.0722116 8.51477 0.00446848 7.89283C0.0504765 7.56704 0.510557 7.24126 1.36937 6.90067Z" fill="url(#paint0_linear_30_2273)"/>
-                                                        <defs>
-                                                        <linearGradient id="paint0_linear_30_2273" x1="0" y1="0" x2="21.2775" y2="14.0678" gradientUnits="userSpaceOnUse">
-                                                        <stop stop-color="#06BDFF"/>
-                                                        <stop offset="1" stop-color="#2A75FF"/>
-                                                        </linearGradient>
-                                                        </defs>
-                                                    </svg>
-                                                    Telegram
-                                                </label>
-                                                <input type="radio" name="social" id="telegram">
-                                            </div>
-                                            <div class="radio-item">
-                                                <label for="discord">
-                                                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M18.624 1.32633C17.1977 0.701656 15.6924 0.256191 14.146 0.00109401C14.1319 -0.00140007 14.1174 0.000395211 14.1045 0.00622447C14.0916 0.0120537 14.0809 0.0216204 14.074 0.0335649C13.8806 0.361759 13.6664 0.789867 13.5164 1.12638C11.8254 0.88482 10.1431 0.88482 8.48684 1.12638C8.3368 0.782405 8.11482 0.361759 7.92056 0.0335649C7.91338 0.0218727 7.90267 0.0125191 7.88983 0.00672619C7.87699 0.000933247 7.86261 -0.00102971 7.84858 0.00109401C6.2773 0.259303 4.77365 0.7116 3.37055 1.32633C3.35834 1.33128 3.34804 1.33971 3.34107 1.35048C0.488974 5.41611 -0.29237 9.38183 0.0909114 13.2983C0.0926301 13.3175 0.103931 13.3358 0.119529 13.3475C2.00126 14.6661 3.82408 15.4665 5.613 15.9971C5.62691 16.0011 5.64176 16.0009 5.65555 15.9966C5.66935 15.9923 5.68143 15.984 5.69018 15.973C6.11333 15.4216 6.49056 14.8402 6.81398 14.2288C6.83306 14.193 6.81484 14.1505 6.77583 14.1363C6.17748 13.9198 5.60776 13.6557 5.05969 13.3559C5.01634 13.3317 5.01286 13.2726 5.05278 13.2442C5.16842 13.1618 5.28206 13.0768 5.39361 12.9893C5.40339 12.9816 5.41523 12.9767 5.42779 12.9751C5.44036 12.9735 5.45314 12.9752 5.46472 12.9802C9.06516 14.5486 12.9631 14.5486 16.521 12.9802C16.5326 12.9749 16.5455 12.9729 16.5583 12.9744C16.571 12.9758 16.5831 12.9807 16.593 12.9885C16.7047 13.0764 16.8186 13.1617 16.9347 13.2442C16.9746 13.2725 16.9719 13.3317 16.9286 13.3558C16.3806 13.6615 15.8108 13.9197 15.2116 14.1355C15.2024 14.1388 15.194 14.144 15.1871 14.1507C15.1801 14.1573 15.1747 14.1653 15.1711 14.1741C15.1676 14.1829 15.1661 14.1924 15.1667 14.2018C15.1672 14.2112 15.1698 14.2204 15.1744 14.2287C15.5048 14.8393 15.882 15.4207 16.2973 15.9721C16.3147 15.9954 16.3459 16.0054 16.3745 15.9971C18.1721 15.4665 19.9949 14.666 21.8767 13.3475C21.8847 13.3418 21.8915 13.3346 21.8964 13.3263C21.9014 13.3179 21.9044 13.3087 21.9053 13.2992C22.364 8.77124 21.1369 4.83803 18.6525 1.3513C18.6465 1.33999 18.6363 1.33114 18.624 1.32633ZM7.35174 10.9136C6.26776 10.9136 5.37457 9.96405 5.37457 8.79788C5.37457 7.63176 6.2504 6.68219 7.35174 6.68219C8.46166 6.68219 9.34622 7.64008 9.32886 8.79788C9.32886 9.96405 8.45298 10.9136 7.35174 10.9136ZM14.6619 10.9136C13.578 10.9136 12.6848 9.96405 12.6848 8.79788C12.6848 7.63176 13.5606 6.68219 14.6619 6.68219C15.7719 6.68219 16.6564 7.64008 16.6391 8.79788C16.6391 9.96405 15.7719 10.9136 14.6619 10.9136Z" fill="url(#paint0_linear_30_2277)"/>
-                                                        <defs>
-                                                        <linearGradient id="paint0_linear_30_2277" x1="0" y1="0" x2="22" y2="16" gradientUnits="userSpaceOnUse">
-                                                        <stop stop-color="#06BDFF"/>
-                                                        <stop offset="1" stop-color="#2A75FF"/>
-                                                        </linearGradient>
-                                                        </defs>
-                                                        </svg>
-                                                        
-                                                    Discord
-                                                </label>
-                                                <input type="radio" name="social" id="discord">
-                                            </div>
-                                        </div>
-                                        <input type="text" name="nickname" id="nickname" placeholder="Никнейм" required disabled>
-                                    </div>
-                                </div>
-                                <div class="order-item">
-                                    <div class="order-item-header">
-                                        <label for="price-input">
-                                            Введите необходимую сумму пополнения 
-                                        </label>
-                                    </div>
-                                    <div class="input-item">
-                                        <i class="icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13 12C18.333 12 18.333 4 13 4" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M6.00003 12H13" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M6.00003 16H12" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M9.00003 19V4" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M9.00003 4H13" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                        </i>
-                                        <input type="number" name="price-input" id="price-input">
-                                    </div>
-                                    <div class="prices-container">
-                                        <div class="price-item">
-                                            <label for="price-100">
-                                                100 <img src="assets/images/index/russian-ruble.svg" alt="ruble">
-                                            </label>
-                                            <input type="radio" name="price" id="price-100" value="100">
-                                        </div>
-                                        <div class="price-item">
-                                            <label for="price-250">
-                                               250 <img src="assets/images/index/russian-ruble.svg" alt="ruble">
-                                            </label>
-                                            <input type="radio" name="price" id="price-250" value="250">
-                                        </div>
-                                        <div class="price-item">
-                                            <label for="price-500">
-                                                500 <img src="assets/images/index/russian-ruble.svg" alt="ruble">
-                                            </label>
-                                            <input type="radio" name="price" id="price-500" value="500">
-                                        </div>
-                                        <div class="price-item">
-                                            <label for="price-1000">
-                                                1000 <img src="assets/images/index/russian-ruble.svg" alt="ruble">
-                                            </label>
-                                            <input type="radio" name="price" id="price-1000" value="1000">
-                                        </div>
-                                        <div class="price-item">
-                                            <label for="price-2500">
-                                                2500 <img src="assets/images/index/russian-ruble.svg" alt="ruble">
-                                            </label>
-                                            <input type="radio" name="price" id="price-2500" value="2500">
-                                        </div>
-                                        <div class="price-item">
-                                            <label for="price-5000">
-                                                5000 <img src="assets/images/index/russian-ruble.svg" alt="ruble">
-                                            </label>
-                                            <input type="radio" name="price" id="price-5000" value="5000">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-payments">
-                                <div class="payments-title">
-                                    Выберите способ оплаты
-                                </div>
-                                <div class="payments">
-                                    <div class="payments-item">
-                                        <input type="radio" name="payment_type" id="visa">
-                                        <label for="visa">
-                                            <img src="assets/images/index/visa.svg" alt="visa">
-                                            
-                                        </label>
-                                    </div>
-                                    <div class="payments-item">
-                                        <input type="radio" name="payment_type" id="sbp">
-                                        <label for="sbp">
-                                            <img src="assets/images/index/sbp.svg" alt="sbp">
-                                        
-                                        </label>
-                                    </div>
-                                    <div class="payments-item">
-                                        <input type="radio" name="payment_type" id="qiwi">
-                                        <label for="qiwi">
-                                            <img src="assets/images/index/qiwi.svg" alt="qiwi">
-                                        </label>   
-                                    </div>
-                                </div>
-                                <div class="payments-information">
-                                    <div class="payment-information-item">
-                                        <div class="title">
-                                            Всего заплатите 
-                                        </div>
-                                        <div class="price">
-                                            845 <img src="assets/images/index/form_ruble.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                    <div class="payment-information-item">
-                                        <div class="title">
-                                            Всего заплатите <span>(30%)</span>
-                                        </div>
-                                        <div class="price">
-                                            845 <img src="assets/images/index/form_ruble.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                    <div class="payment-information-item">
-                                        <div class="title">
-                                            Получите на баланс Steam
-                                        </div>
-                                        <div class="price">
-                                            650 <img src="assets/images/index/form_ruble.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="send-form">
-                                    <div class="payments-agreement">
-                                        <input type="checkbox" id="agreement" name="agreement">
-                                        <label for="agreement">
-                                            Я подтверждаю, что указал все данные верно и согласен на операцию
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="form-btn" disabled>Пополнить счёт</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>     
-            </section>
- 
-            <!-- SECTION INSTRUCTION -->
-            <section class="instruction">
-                <div class="instruction-line"></div>
-                <div class="container">
-                    <div class="section-title">
-                        Как работает пополнение баланса <img src="assets/images/index/steam.svg" alt="steam"> кошелька через нас?
-                    </div> 
-                    <div class="instruction-row">
-                        <div class="instruction-top">
-                            <div class="instruction-card">
-                                <div class="card-title">
-                                    Скопируйте логин
-                                </div>
-                                <div class="card-description">
-                                    Найдите свой логин в Steam и введите его в соответствующем поле.
-                                </div>
-                                <div class="modal-btn">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 16V12" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 8H12.01" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>      
-                                    Где найти логин?    
-                                </div>
-                            </div>
-                            <div class="instruction-images">
-                                <img src="assets/images/index/instruction_img_1.png" alt="instruction">
-                                <img src="assets/images/index/instruction_img_2.png" alt="instruction">
-                            </div>
-                            <div class="instruction-card info">
-                                <div class="card-title">
-                                    Укажите сумму
-                                </div>
-                                <div class="card-description">
-                                    Введите в рублях нужную вам сумму пополнения аккаунта Steam в соответствующем поле.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="instruction-middle">
-                            <div class="instruction-card">
-                                <div class="card-title">
-                                    Способ связи
-                                </div>
-                                <div class="card-description">
-                                    Выберите удобный для вас способ связи через Telegram или Discord.
-                                </div>
-                                <div class="card-actions">
-                                    <a href="#" class="action-item">
-                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36937 6.90067C6.73698 4.64981 10.3103 3.15417 12.1046 2.42856C17.2115 0.370208 18.285 0.0148083 18.9751 0C19.1285 0 19.4659 0.0296168 19.6959 0.207316C19.8799 0.355399 19.926 0.547908 19.9566 0.695991C19.9873 0.844074 20.018 1.15505 19.9873 1.39198C19.7112 4.20556 18.515 11.0322 17.9016 14.1715C17.6409 15.5043 17.1348 15.9485 16.644 15.993C15.5705 16.0818 14.7577 15.3118 13.7302 14.6602C12.1046 13.6384 11.1998 13.0017 9.62015 11.9947C7.79516 10.8397 8.97604 10.2029 10.0189 9.16634C10.2949 8.89979 15.0031 4.75347 15.0951 4.38326C15.1104 4.33883 15.1104 4.16113 15.0031 4.07228C14.8957 3.98343 14.7424 4.01305 14.6197 4.04267C14.451 4.07228 11.8745 5.73081 6.85967 9.00345C6.12354 9.49212 5.46409 9.72905 4.86598 9.71425C4.20654 9.69944 2.94898 9.35885 1.99815 9.06268C0.847949 8.70728 -0.0722116 8.51477 0.00446848 7.89282C0.0504765 7.56704 0.510557 7.24126 1.36937 6.90067Z" fill="url(#paint0_linear_2_249)"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_2_249" x1="0" y1="0" x2="21.2775" y2="14.0678" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#06BDFF"/>
-                                            <stop offset="1" stop-color="#2A75FF"/>
-                                            </linearGradient>
-                                            </defs>
-                                        </svg>
-                                        Telegram                                            
-                                    </a>
-                                    <a href="#" class="action-item">
-                                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.624 1.32633C17.1977 0.701656 15.6924 0.256191 14.146 0.00109401C14.1319 -0.00140007 14.1174 0.000395211 14.1045 0.00622447C14.0916 0.0120537 14.0809 0.0216204 14.074 0.0335649C13.8806 0.361759 13.6664 0.789867 13.5164 1.12638C11.8254 0.88482 10.1431 0.88482 8.48684 1.12638C8.3368 0.782405 8.11482 0.361759 7.92056 0.0335649C7.91338 0.0218727 7.90267 0.0125191 7.88983 0.00672619C7.87699 0.000933247 7.86261 -0.00102971 7.84858 0.00109401C6.2773 0.259303 4.77365 0.7116 3.37055 1.32633C3.35834 1.33128 3.34804 1.33971 3.34107 1.35048C0.488974 5.41611 -0.29237 9.38183 0.0909114 13.2983C0.0926301 13.3175 0.103931 13.3358 0.119529 13.3475C2.00126 14.6661 3.82408 15.4665 5.613 15.9971C5.62691 16.0011 5.64176 16.0009 5.65555 15.9966C5.66935 15.9923 5.68143 15.984 5.69018 15.973C6.11333 15.4216 6.49056 14.8402 6.81398 14.2288C6.83306 14.193 6.81484 14.1505 6.77583 14.1363C6.17748 13.9198 5.60776 13.6557 5.05969 13.3559C5.01634 13.3317 5.01286 13.2726 5.05278 13.2442C5.16842 13.1618 5.28206 13.0768 5.39361 12.9893C5.40339 12.9816 5.41523 12.9767 5.42779 12.9751C5.44036 12.9735 5.45314 12.9752 5.46472 12.9802C9.06516 14.5486 12.9631 14.5486 16.521 12.9802C16.5326 12.9749 16.5455 12.9729 16.5583 12.9744C16.571 12.9758 16.5831 12.9807 16.593 12.9885C16.7047 13.0764 16.8186 13.1617 16.9347 13.2442C16.9746 13.2725 16.9719 13.3317 16.9286 13.3558C16.3806 13.6615 15.8108 13.9197 15.2116 14.1355C15.2024 14.1388 15.194 14.144 15.1871 14.1507C15.1801 14.1573 15.1747 14.1653 15.1711 14.1741C15.1676 14.1829 15.1661 14.1924 15.1667 14.2018C15.1672 14.2112 15.1698 14.2204 15.1744 14.2287C15.5048 14.8393 15.882 15.4207 16.2973 15.9721C16.3147 15.9954 16.3459 16.0054 16.3745 15.9971C18.1721 15.4665 19.9949 14.666 21.8767 13.3475C21.8847 13.3418 21.8915 13.3346 21.8964 13.3263C21.9014 13.3179 21.9044 13.3087 21.9053 13.2992C22.364 8.77124 21.1369 4.83803 18.6525 1.3513C18.6465 1.33999 18.6363 1.33114 18.624 1.32633ZM7.35174 10.9136C6.26776 10.9136 5.37457 9.96405 5.37457 8.79788C5.37457 7.63176 6.2504 6.68219 7.35174 6.68219C8.46166 6.68219 9.34622 7.64008 9.32886 8.79788C9.32886 9.96405 8.45298 10.9136 7.35174 10.9136ZM14.6619 10.9136C13.578 10.9136 12.6848 9.96405 12.6848 8.79788C12.6848 7.63176 13.5606 6.68219 14.6619 6.68219C15.7719 6.68219 16.6564 7.64008 16.6391 8.79788C16.6391 9.96405 15.7719 10.9136 14.6619 10.9136Z" fill="#F4F4F4"/>
-                                        </svg>                                            
-                                        Discord
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="instruction-bottom">
-                            <div class="top-items">
-                                <div class="instruction-card">
-                                    <div class="card-title">
-                                        Оплатите
-                                    </div>
-                                    <div class="card-description">
-                                        После выбора удобного способа оплаты, остается только ввести свои данные и подтвердить платеж.
-                                    </div>
-                                </div>
-                                <div class="instruction-images">
-                                    <img src="assets/images/index/instruction_img_3.png" alt="instruction">
-                                    <img src="assets/images/index/instruction_img_4.png" alt="instruction">
-                                </div>
-                            </div>
-                            <div class="bottom-items">
-                                <div class="instruction-card">
-                                    <div class="card-title">
-                                        Готово
-                                    </div>
-                                    <div class="card-description">
-                                        В течение 20 минут средства поступят на ваш Steam кошелек.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>         
-            </section>
-            <!-- SECTION ADVERTISE -->
-            <section class="advertise">
-                <div class="container">
-                    <div class="advertise-row">
-                        <div class="advertise-body">
-                            <div class="advertise-text">
-                                Размер комиссии нашего сервиса 
-                                не зависит от общей суммы пополнения и составляет — 
-                            </div>
-                            <div class="advertise-action">
-                                <a href="#" class="advertise-btn">Перейти к пополнению</a>
-                            </div>
-                        </div>
-                        <div class="advertise-price">
-                            30
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SECTION TESTIMONIALS -->
-            <section class="testimonials">
-                <div class="container">
-                    <div class="section-title">
-                        Отзывы наших клиентов <span class="title-span">1000+</span>
-                    </div>
-                    <div class="swiper testimonials-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide-item">
-                                    <div class="slide-image">
-                                        <img src="assets/images/index/testiminials_1.png" alt="testimonials" >
-                                    </div>
-                                    <div class="slide-text">
-                                        <div class="author">
-                                            Drakon98**
-                                        </div>
-                                        <div class="price">
-                                            2 500 <img src="assets/images/index/ruble_icon.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-item">
-                                    <div class="slide-image">
-                                        <img src="assets/images/index/testiminials_2.png" alt="testimonials" >
-                                    </div>
-                                    <div class="slide-text">
-                                        <div class="author">
-                                            LurkNST**
-                                        </div>
-                                        <div class="price">
-                                            5 200 <img src="assets/images/index/ruble_icon.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-item">
-                                    <div class="slide-image">
-                                        <img src="assets/images/index/testiminials_3.png" alt="testimonials" >
-                                    </div>
-                                    <div class="slide-text">
-                                        <div class="author">
-                                            Alex20**
-                                        </div>
-                                        <div class="price">
-                                            570 <img src="assets/images/index/ruble_icon.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-item">
-                                    <div class="slide-image">
-                                        <img src="assets/images/index/testiminials_4.png" alt="testimonials" >
-                                    </div>
-                                    <div class="slide-text">
-                                        <div class="author">
-                                            Qff_R**
-                                        </div>
-                                        <div class="price">
-                                            1 200 <img src="assets/images/index/ruble_icon.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-item">
-                                    <div class="slide-image">
-                                        <img src="assets/images/index/testiminials_4.png" alt="testimonials" >
-                                    </div>
-                                    <div class="slide-text">
-                                        <div class="author">
-                                            Drakon98**
-                                        </div>
-                                        <div class="price">
-                                            2 500 <img src="assets/images/index/ruble_icon.svg" alt="ruble">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-nav">
-                            <div class="slide-next">
-                                <img src="assets/images/index/next_arrow.svg" alt="arrow">
-                            </div>
-                            <div class="slide-prev">
-                                <img src="assets/images/index/next_arrow.svg" alt="arrow">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SECTION BLOG -->
-            <section class="blog">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="section-title">
-                            Наш блог
-                        </div>
-                        <div class="section-action">
-                            <a href="#" class="blog-btn">
-                                Посмотреть больше
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="content-item">
-                            <a href="#" class="blog-item">
-                                <div class="item-image">
-                                    <img src="assets/images/index/blog_1.png" alt="blog-news" height="260px" width="460px">
-                                </div>
-                                <div class="item-title">
-                                    Обзор The Callisto Protocol — идейная, но не до конца
-                                </div>
-                            </a>
-                        </div>
-                        <div class="content-item">
-                            <a href="#" class="blog-item">
-                                <div class="item-image">
-                                    <img src="assets/images/index/blog_2.png" alt="blog-news" height="260px" width="460px">
-                                </div>
-                                <div class="item-title">
-                                    Широкий пул – обязанность каждого игрока?
-                                </div>
-                            </a>
-                        </div>
-                        <div class="content-item">
-                            <a href="#" class="blog-item">
-                                <div class="item-image">
-                                    <img src="assets/images/index/blog_3.png" alt="blog-news" height="260px" width="460px">
-                                </div>
-                                <div class="item-title">
-                                    Живопись, интриги, любовь в Дораме Рисующий Ветер
-                                </div>
-                            </a>
-                        </div>
-                        <div class="content-item">
-                            <a href="#" class="blog-item">
-                                <div class="item-image">
-                                    <img src="assets/images/index/blog_4.png" alt="blog-news" height="260px" width="460px">
-                                </div>
-                                <div class="item-title">
-                                    У аниме-девушки Lofi Girl с YouTube появился «сосед»
-                                </div>
-                            </a>
-                        </div>
-                        <div class="content-item">
-                            <a href="#" class="blog-item">
-                                <div class="item-image">
-                                    <img src="assets/images/index/blog_5.png" alt="blog-news" height="260px" width="460px">
-                                </div>
-                                <div class="item-title">
-                                    Игрок провернул крупнейшее ограбление в истории EVE Online
-                                </div>
-                            </a>
-                        </div>
-                        <div class="content-item">
-                            <a href="#" class="blog-item">
-                                <div class="item-image">
-                                    <img src="assets/images/index/blog_6.png" alt="blog-news" height="260px" width="460px">
-                                </div>
-                                <div class="item-title">
-                                    Мелочи жизни в Persona 5/Royal
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SECTION FAQ -->
-            <section class="faq">
-                <div class="container">
-                    <div class="section-title">
-                        FAQ <span class="title-span">?</span>
-                    </div>
-                    <div class="faq-wrapper">
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                Что такое "Логин" и где его искать?
-                            </div>
-                            <div class="faq-content">
-                                Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                Я указал неверный логин
-                            </div>
-                            <div class="faq-content">
-                                Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                Какие требования к аккаунту?
-                            </div>
-                            <div class="faq-content">
-                                Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                У меня новый (свежесозданный) или ранее не пополнявшийся аккаунт
-                            </div>
-                            <div class="faq-content">
-                                Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                Не приходят деньги на баланс аккаунта Steam, что делать?
-                            </div>
-                            <div class="faq-content">
-                                Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                Пришла сумма меньше чем в калькуляторе. Что делать?
-                            </div>
-                            <div class="faq-content">
-                                Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                Политика возврата
-                            </div>
-                            <div class="faq-content">
-                                Есть перечень требований к аккаунту, соответствие которых позволит нам совершить пополнение баланса: - Страной Вашего аккаунта должна быть Россия (и следовательно, валюта аккаунта — рубли).- Также мы НЕ можем отправить средства пользователям из следующих регионов: Крым, ЛНР, ДНР и тем пользователям, на аккаунте которых красная табличка (КТ).
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <div class="footer-row">
-                    <div class="footer-top">
-                        <div class="footer-top-left">
-                            <div class="footer-logo">
-                                <a href="#"><img src="assets/images/footer_logo.svg" alt="logo"></a>
-                            </div>
-                            <nav class="menu-nav">
-                                <ul class="nav-list">
-                                    <li> 
-                                        <a href="#" class="nav-item">Пополнить сейчас</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-item">Как это работает?</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-item">Комиссия</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-item">Отзывы</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-item">Блог</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-item">FAQ</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer-actions">
-                            <a href="#" class="action-item">
-                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36937 6.90067C6.73698 4.64981 10.3103 3.15417 12.1046 2.42856C17.2115 0.370208 18.285 0.0148083 18.9751 0C19.1285 0 19.4659 0.0296168 19.6959 0.207316C19.8799 0.355399 19.926 0.547908 19.9566 0.695991C19.9873 0.844074 20.018 1.15505 19.9873 1.39198C19.7112 4.20556 18.515 11.0322 17.9016 14.1715C17.6409 15.5043 17.1348 15.9485 16.644 15.993C15.5705 16.0818 14.7577 15.3118 13.7302 14.6602C12.1046 13.6384 11.1998 13.0017 9.62015 11.9947C7.79516 10.8397 8.97604 10.2029 10.0189 9.16634C10.2949 8.89979 15.0031 4.75347 15.0951 4.38326C15.1104 4.33883 15.1104 4.16113 15.0031 4.07228C14.8957 3.98343 14.7424 4.01305 14.6197 4.04267C14.451 4.07228 11.8745 5.73081 6.85967 9.00345C6.12354 9.49212 5.46409 9.72905 4.86598 9.71425C4.20654 9.69944 2.94898 9.35885 1.99815 9.06268C0.847949 8.70728 -0.0722116 8.51477 0.00446848 7.89282C0.0504765 7.56704 0.510557 7.24126 1.36937 6.90067Z" fill="#F4F4F4"/>
-                                </svg>                                    
-                            </a>
-                            <a href="" class="action-item">
+                                </svg>     
+                            </i>                               
+                        </a>
+                        <a href="" class="action-item">
+                            <i class="icon">
                                 <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18.624 1.32633C17.1977 0.701656 15.6924 0.256191 14.146 0.00109401C14.1319 -0.00140007 14.1174 0.000395211 14.1045 0.00622447C14.0916 0.0120537 14.0809 0.0216204 14.074 0.0335649C13.8806 0.361759 13.6664 0.789867 13.5164 1.12638C11.8254 0.88482 10.1431 0.88482 8.48684 1.12638C8.3368 0.782405 8.11482 0.361759 7.92056 0.0335649C7.91338 0.0218727 7.90267 0.0125191 7.88983 0.00672619C7.87699 0.000933247 7.86261 -0.00102971 7.84858 0.00109401C6.2773 0.259303 4.77365 0.7116 3.37055 1.32633C3.35834 1.33128 3.34804 1.33971 3.34107 1.35048C0.488974 5.41611 -0.29237 9.38183 0.0909114 13.2983C0.0926301 13.3175 0.103931 13.3358 0.119529 13.3475C2.00126 14.6661 3.82408 15.4665 5.613 15.9971C5.62691 16.0011 5.64176 16.0009 5.65555 15.9966C5.66935 15.9923 5.68143 15.984 5.69018 15.973C6.11333 15.4216 6.49056 14.8402 6.81398 14.2288C6.83306 14.193 6.81484 14.1505 6.77583 14.1363C6.17748 13.9198 5.60776 13.6557 5.05969 13.3559C5.01634 13.3317 5.01286 13.2726 5.05278 13.2442C5.16842 13.1618 5.28206 13.0768 5.39361 12.9893C5.40339 12.9816 5.41523 12.9767 5.42779 12.9751C5.44036 12.9735 5.45314 12.9752 5.46472 12.9802C9.06516 14.5486 12.9631 14.5486 16.521 12.9802C16.5326 12.9749 16.5455 12.9729 16.5583 12.9744C16.571 12.9758 16.5831 12.9807 16.593 12.9885C16.7047 13.0764 16.8186 13.1617 16.9347 13.2442C16.9746 13.2725 16.9719 13.3317 16.9286 13.3558C16.3806 13.6615 15.8108 13.9197 15.2116 14.1355C15.2024 14.1388 15.194 14.144 15.1871 14.1507C15.1801 14.1573 15.1747 14.1653 15.1711 14.1741C15.1676 14.1829 15.1661 14.1924 15.1667 14.2018C15.1672 14.2112 15.1698 14.2204 15.1744 14.2287C15.5048 14.8393 15.882 15.4207 16.2973 15.9721C16.3147 15.9954 16.3459 16.0054 16.3745 15.9971C18.1721 15.4665 19.9949 14.666 21.8767 13.3475C21.8847 13.3418 21.8915 13.3346 21.8964 13.3263C21.9014 13.3179 21.9044 13.3087 21.9053 13.2992C22.364 8.77124 21.1369 4.83803 18.6525 1.3513C18.6465 1.33999 18.6363 1.33114 18.624 1.32633ZM7.35174 10.9136C6.26776 10.9136 5.37457 9.96405 5.37457 8.79788C5.37457 7.63176 6.2504 6.68219 7.35174 6.68219C8.46166 6.68219 9.34622 7.64008 9.32886 8.79788C9.32886 9.96405 8.45298 10.9136 7.35174 10.9136ZM14.6619 10.9136C13.578 10.9136 12.6848 9.96405 12.6848 8.79788C12.6848 7.63176 13.5606 6.68219 14.6619 6.68219C15.7719 6.68219 16.6564 7.64008 16.6391 8.79788C16.6391 9.96405 15.7719 10.9136 14.6619 10.9136Z" fill="#F4F4F4"/>
-                                </svg>                                    
-                            </a>
-                        </div>
+                                </svg> 
+                            </i>                                   
+                        </a>
                     </div>
-                    <div class="footer-bottom">
-                        <div class="copyright">
-                            © <script>document.write( new Date().getFullYear() )</script>, <a href="#">ПополнимСтим.рф</a>
-                        </div>
-                        <div class="privacy-policy">
-                           <a href="#">Политика конфиденциальности</a>
-                        </div>
-                        <div class="terms-of-use">
-                            <a href="#">Пользовательское соглашение</a>
-                        </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        © <script>document.write( new Date().getFullYear() )</script>, <a href="#">ПополнимСтим.рф</a>
+                    </div>
+                    <div class="privacy-policy">
+                       <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="terms-of-use">
+                        <a href="#">Пользовательское соглашение</a>
                     </div>
                 </div>
             </div>
         </footer>
 
-        <!-- MODAL -->
-        <div class="modal">
-            <div class="modal-row">
-                <div class="modal-header">
-                    <div class="modal-title">
-                        Где найти логин Steam?
+        </div>
+        
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal-row">
+            <div class="modal-header">
+                <div class="modal-title">
+                    Где найти логин Steam?
+                </div>
+                <div class="close-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-item">
+                    <div class="item-title">
+                        Нажимаем на свой никнейм на верхней панели.
                     </div>
-                    <div class="close-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6 6L18 18" stroke="#61758B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                                
+                    <div class="item-image">
+                        <img src="assets/images/modal_img_1.png" alt="image">
                     </div>
                 </div>
-                <div class="modal-body">
-                    <div class="modal-item">
-                        <div class="item-title">
-                            Нажимаем на свой никнейм на верхней панели.
-                        </div>
-                        <div class="item-image">
-                            <img src="assets/images/index/modal_img_1.png" alt="image">
-                        </div>
+                <div class="modal-item">
+                    <div class="item-title">
+                        Выбираем раздел "Об аккаунте".
                     </div>
-                    <div class="modal-item">
-                        <div class="item-title">
-                            Выбираем раздел "Об аккаунте".
-                        </div>
-                        <div class="item-image">
-                            <img src="assets/images/index/modal_img_2.png" alt="image">
-                        </div>
+                    <div class="item-image">
+                        <img src="assets/images/modal_img_2.png" alt="image">
                     </div>
-                    <div class="modal-item">
-                        <div class="item-title">
-                            Сверху белым шрифтом будет указан ваш логин — копируем его.
-                        </div>
-                        <div class="item-image">
-                            <img src="assets/images/index/modal_img_3.png" alt="image">
-                        </div>
+                </div>
+                <div class="modal-item">
+                    <div class="item-title">
+                        Сверху белым шрифтом будет указан ваш логин — копируем его.
+                    </div>
+                    <div class="item-image">
+                        <img src="assets/images/modal_img_3.png" alt="image">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- MODAL OVERLAY -->
-        <div class="overlay"></div>
     </div>
+
+    <!-- MODAL OVERLAY -->
+    <div class="overlay"></div>
+
     <!-- JS FILES -->
     <script src="assets/vendor/jquery-3.6.4.min.js"></script>
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
