@@ -1,18 +1,22 @@
 $(document).ready(function(e) {
 
-    // let discord = $('.input-radios #discord');
-    // let telegram = $('.input-radios #telegram');
-    // let alertContainer = $('.order-item .input-alert-container');
-    // let nicknameInput = $('.order-item #nickname');
+    let discord = $('.input-radios #discord');
+    let telegram = $('.input-radios #telegram');
+    let alertContainer = $('.order-item .input-alert-container');
+    let nicknameInput = $('.order-item #nickname');
+    let input = $('.input-container #nickname')
 
-    // $('.input-radios .radio-item input').on('change', function(e) {
-    //     $(nicknameInput).removeAttr('disabled');
-    //     if (discord.is(':checked')) {
-    //         alertContainer.slideToggle();
-    //     } else if (telegram.is(':checked')) {
-    //         alertContainer.slideUp();
-    //     }
-    // });
+    $('.input-radios .radio-item input').on('change', function(e) {
+        $(nicknameInput).removeAttr('disabled');
+        input.attr('placeholder', 'Ваш никнейм и тег Discord');
+        if (discord.is(':checked')) {
+            alertContainer.addClass('active');
+            
+        } else if (telegram.is(':checked')) {
+            input.attr('placeholder', 'Введите ваш никнейм Telegram');
+            alertContainer.removeClass('active');
+        }
+    });
 
     $('.testimonials-swiper .slide-item').magnificPopup({
         type: 'image',
@@ -36,12 +40,15 @@ $(document).ready(function(e) {
     // MODAL
     $('.modal-btn').on('click', function(e){
         $('.modal').addClass('active');
-    });
+        $('.overlay').addClass('active');
+        $('body').addClass('overflow_hidden');
+      });
 
-    $('.modal .close-btn').on('click', function(e){
+      $('.modal .close-btn, .overlay').on('click', function(e){
         $('.modal').removeClass('active');
+        $('.overlay').removeClass('active');
+        $('body').removeClass('overflow_hidden');
     });
-
     // FAQ ACCORDION
     $('.faq .faq-item').on('click',function(e){
         e.preventDefault();
@@ -74,6 +81,21 @@ $(document).ready(function(e) {
     });
 
     // BLOG PAGE
+
+    // BLOG FIX HEADER
+    let header = $('header.article-header');
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 100) {
+          header.addClass("fixed-header");
+        } else {
+          header.removeClass("fixed-header");
+        }
+      });
+    
+    // ARTICLE ACCORDION
     $('.article-accordion .accordion-item').on('click', function(e) {
         e.preventDefault();
         $(this).find('.accordion-content-wrapper').slideToggle(300);
@@ -120,41 +142,3 @@ $(document).ready(function(e) {
         checkSectionInView();
     });
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// window.onload = function() {
-//     let accordionItems = document.querySelectorAll('.article-accordion .accordion-item');
-  
-//     accordionItems.forEach(function(item) {
-//       item.addEventListener('click', function() {
-//         const isActive = this.classList.contains('active');
-  
-//         accordionItems.forEach(function(item) {
-//           item.classList.remove('active');
-//         });
-
-//         if (!isActive) {
-//           this.classList.add('active');
-//         }
-//       });
-//     });
-//   };
-
